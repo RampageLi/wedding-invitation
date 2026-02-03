@@ -11,7 +11,7 @@ const isRemoved = APP.globalData.isRemoved
 Page({
     data: {
         ...APP.globalData,
-        isManager: false, // 当前用户是否为管理员
+        isManager: true, // 当前用户是否为管理员
         musicIsPaused: false, // 是否暂停背景音乐
         activeIdx: isRemoved ? 0 : -1, // 祝福语轮播用，当前显示的祝福语索引值
         form: { // 表单信息
@@ -42,9 +42,9 @@ Page({
 
         // 背景音乐（默认用陈奕迅的《I DO》，想换的话自己去找音频资源，我是在「婚贝」上找的）
         music: {
-            src: 'https://amp3.hunbei.com/mp3/IDo_ChenYiXun.mp3', // 音频资源链接
-            name: 'I DO', // 歌名
-            singer: '陈奕迅' // 歌手名
+            src: 'http://music.163.com/song/media/outer/url?id=1359492414.mp3', // 音频资源链接
+            name: 'Marry Me', // 歌名
+            singer: 'Jason Derulo' // 歌手名
         },
 
         // 酒店信息（通过页面上的「选择位置并获取定位信息」按钮可以获取定位信息，发布前记得把按钮注释起来）
@@ -58,16 +58,16 @@ Page({
         // 图片信息（其实就是婚纱照了）
         imgs: {
             // 封面图
-            cover: 'https://res.wx.qq.com/t/fed_upload/459fb8da-b31a-420f-b8cc-f51126952685/cover.jpg',
+            cover: 'https://pic1.imgdb.cn/item/6981d89d4f83a817d7f82dc3.jpg',
 
             // 音乐封面
-            poster: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/poster.jpg',
+            poster: 'https://pic1.imgdb.cn/item/6981e5514f83a817d7f83299.jpg',
 
             // 新郎独照
-            husband: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/husband.jpg',
+            husband: 'https://pic1.imgdb.cn/item/6981ecf74f83a817d7f834bd.jpg',
 
             // 新娘独照
-            wife: 'https://res.wx.qq.com/t/fed_upload/d811d254-e5d6-4c19-9ff8-77c4b6128137/wife.jpg',
+            wife: 'https://pic1.imgdb.cn/item/6981ec9d4f83a817d7f834a0.jpg',
 
             // 轮播图1
             swiper1: [
@@ -360,7 +360,8 @@ Page({
                 openid
             }
         }) => {
-            const isManager = MANAGER.indexOf(openid) > -1
+            // const isManager = MANAGER.indexOf(openid) > -1
+            const isManager = true
             greetings.length && this.setData(this.data.activeIdx === -1 ? {
                 isManager,
                 greetings,

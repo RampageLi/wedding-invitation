@@ -1,6 +1,6 @@
 <view class="title">
-    <view>好久不见，婚礼见丨{{ couple[0].name }}&{{ couple[1].name }}</view>
-    <view>我们结婚啦~</view>
+    <view>来自海岛的婚礼请柬</view>
+    <view>欢迎参加{{ couple[0].name }}&{{ couple[1].name }}的草坪婚礼</view>
 </view>
 
 <view class="desc">
@@ -9,12 +9,12 @@
 </view>
 
 <view class="cover-wrap">
-    <image class="img-cover-word" src="https://h5cdn.hunbei.com/editorCustomPic/2023-5-5-XpF8Q3dtRTsbfzTY8WwBwFWpDhiGPe5k?imageMogr2/auto-orient/thumbnail/747x693>" mode="aspectFit" />
+    <image class="img-cover-word" src="https://pic1.imgdb.cn/item/6981e0ea4f83a817d7f83010.png>" mode="aspectFit" />
     <view class="cover">
         <image class="img-invitation" src="https://h5cdn.hunbei.com/editorCustomPic/2022-11-4-N87SPKmaSQW7kZ3i7ZH4QHeMXpYhZzDs.png?imageMogr2/auto-orient/crop/!1455x384a457a363/quality/90|imageMogr2/thumbnail/659x174>" mode="aspectFit" />
         <image class="img-cover" src="{{ imgs.cover }}" mode="aspectFit" />
     </view>
-    <view class="lh15">斯人若如虹，遇上方知有</view>
+    <view class="lh15">佳偶自天成，良缘由夙缔</view>
 </view>
 
 <view class="music">
@@ -32,57 +32,39 @@
 </view>
 
 <view class="tc lh21 mb58">
-    <view>hi~亲爱的你~</view>
+    <view>Hey!</view>
     <view>当收到这封请柬的时候</view>
-    <view class="mb58">我们的婚礼已经在倒计时啦</view>
-    <view>以前觉得婚礼是一则官方公告</view>
-    <view>现在才明白</view>
+    <view class="mb58">小李和小陈的海岛婚礼已经倒计时啦</view>
+    <view>没有什么规模宏大的盛宴</view>
+    <view>就是想请您吃吃饭、吹吹海风</view>
     <view>这是一场为数不多的相聚</view>
     <view>是千里迢迢的奔赴</view>
-    <view class="mb58">是不计得失的支持</view>
-    <view>好久不见，婚礼见</view>
+    <view>好久不见，海边见</view>
     <view>❤</view>
 </view>
 
 <view class="tc lh21 mb100">
     <image class="img-introduce" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-WNhBXi3ty4fw7dwFBxSZneDKYtz754ya.png?imageMogr2/auto-orient/thumbnail/542.00x58.84>" mode="aspectFit" />
-    <view class="moon">
-        <image class="img-moon" src="https://h5cdn.hunbei.com/editorCustomPic/2022-2-16-6xEP56tzDiPX53f4WZbAYR3pmwAZB7M7.png?imageMogr2/auto-orient/thumbnail/310.00x465.00>" mode="aspectFit" />
-        <image class="img-moon" src="https://h5cdn.hunbei.com/editorCustomPic/2022-2-16-TaHn8RGyJTdcwF5HGPkxrrifeFPNmPek.png?imageMogr2/auto-orient/thumbnail/310.00x464.11>" mode="aspectFit" />
-        <view class="birthday">
-            <text wx:for="{{ couple }}" wx:key="name">{{ item.birthday }}</text>
-        </view>
-    </view>
-    <view>出生时的月亮</view>
-    <view>Random luck in universe</view>
-    <view>宇宙间相遇的浪漫</view>
 </view>
 
 <view class="husband lh21 mb100">
     <image class="img-husband" src="{{ imgs.husband }}" mode="aspectFit" />
     <view class="husband-desc">
         <view>/</view>
-        <view>他有 最暖的真心</view>
-        <view>细腻的心思</view>
-        <view>我一百分的男孩</view>
+        <view>我是小李</view>
+        <view>111</view>
+        <view>111</view>
     </view>
 </view>
 
 <view class="wife lh21 mb100">
     <view class="wife-desc">
         <view>/</view>
-        <view>{{ anniversary }}</view>
-        <view>一见钟情</view>
-        <view>是灵魂认出了你</view>
+        <view>我是小陈</view>
+        <view>111</view>
+        <view>111</view>
     </view>
     <image class="img-wife" src="{{ imgs.wife }}" mode="aspectFit" />
-</view>
-
-<view class="tc lh21 mb100">
-    <view>我常常觉得也许这辈子</view>
-    <view>不会得到所谓的爱情了</view>
-    <view>直到</view>
-    <view>你出现了</view>
 </view>
 
 <view class="tc lh21 mb100">
@@ -294,4 +276,5 @@
 <!-- 公告栏入口 -->
 <view wx:if="{{ isManager }}" class="manager">
     <image bindtap="goInfo" src="../../images/icon/manager.png" mode="widthFix"/>
+    <text class="manager-text">婚礼相关安排</text>
 </view>

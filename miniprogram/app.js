@@ -13,28 +13,28 @@ App({
         magic: true, // 手动党（方便预览完整功能，我先设为true）
 
         // 婚礼日期时间
-        weddingTime: '2023-09-20 17:00:00',
+        weddingTime: '2026-03-28 11:08:00',
 
         // 新郎新娘信息
         couple: [{
             image: 'https://res.wx.qq.com/t/fed_upload/52557f40-32f9-4b37-9115-eed527e55683/husband.jpg', // 新郎单人照
-            name: '周杰伦', // 姓名
+            name: '李睿渊', // 姓名
             alias: '新郎', // 称谓
-            number: 'XXXXXXXXXXX', // 手机号码
-            birthday: '1979.01.18' // 出生日期
+            number: '15010901968', // 手机号码
+            birthday: '1996.06.04' // 出生日期
         }, {
             image: 'https://res.wx.qq.com/t/fed_upload/e4ddf6ce-990c-45b1-b4e9-bdf6a6b498ac/wife.jpg', // 新娘单人照
-            name: '昆凌', // 姓名
+            name: '陈逸雨', // 姓名
             alias: '新娘', // 称谓
-            number: 'XXXXXXXXXXX', // 手机号码
-            birthday: '1993.08.12' // 出生日期
+            number: '18360809965', // 手机号码
+            birthday: '1997.05.20' // 出生日期
         }],
 
         // 发布者（自己想个你俩人的噱头组合名呗）
-        publisher: '杰伦昆凌',
+        publisher: 'C&L',
 
         // 纪念日（如果是一见钟情的话，建议用第一次见面那天）
-        anniversary: '2021.12.11'
+        anniversary: '2018.11.11'
     },
 
     // 小程序启动时，初始化云开发环境

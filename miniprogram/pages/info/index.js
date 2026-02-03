@@ -16,7 +16,7 @@ Page({
         // 以上变量都不用动，以下变量是需要手动修改的
 
         // 公告栏描述
-        desc: `帅哥靓女们都来看看，这里有「${publisher}」婚礼的第一手资料，接亲、婚宴细节全爆料！千万不要错过啊！！！`,
+        desc: `我们婚礼相关的重要信息都在这里啦，有问题欢迎随时联系我们 :)`,
 
         // 其余人员联系方式
         phone: [{
@@ -119,7 +119,7 @@ Page({
     // 分享到会话
     onShareAppMessage() {
         return {
-            title: '婚礼公告栏',
+            title: 'C&L 婚礼公告',
             imageUrl: '../../images/infoPoster.jpg'
         }
     }

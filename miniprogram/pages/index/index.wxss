@@ -575,9 +575,22 @@
     padding: 0;
     transform: translateY(-50%);
     z-index: 99999999;
+    display: flex;
+    flex-direction: column;  /* 垂直排列：上图下字 */
+    align-items: center;  
 }
 
 .manager image {
     width: 120rpx;
     height: 120rpx;
+}
+
+.manager-text {
+  margin-left: 8rpx;
+  padding: 4rpx 10rpx;
+  background-color: #FF8C00;   /* 灰底 */
+  color: #FFFFFF;                /* 深灰字 */
+  font-size: 30rpx;
+  border-radius: 12rpx;       /* 圆角 */
+  line-height: 1;
 }
