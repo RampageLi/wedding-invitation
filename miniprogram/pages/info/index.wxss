@@ -156,3 +156,21 @@ map {
 .info-list:last-child {
     margin-bottom: 0;
 }
+
+.day-block {
+    margin-bottom: 24rpx;
+}
+
+.day-title {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12rpx;
+}
+
+.info-list {
+    font-size: 26rpx;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 6rpx;
+}

@@ -14,7 +14,7 @@
         <image class="img-invitation" src="https://h5cdn.hunbei.com/editorCustomPic/2022-11-4-N87SPKmaSQW7kZ3i7ZH4QHeMXpYhZzDs.png?imageMogr2/auto-orient/crop/!1455x384a457a363/quality/90|imageMogr2/thumbnail/659x174>" mode="aspectFit" />
         <image class="img-cover" src="{{ imgs.cover }}" mode="aspectFit" />
     </view>
-    <view class="lh15">佳偶自天成，良缘由夙缔</view>
+    <view class="cover-text-gold">佳偶自天成，良缘由夙缔</view>
 </view>
 
 <view class="music">
@@ -23,7 +23,7 @@
     </view>
     <view class="music-left">
         <view class="music-title">{{ music.name }} - {{ music.singer }}</view>
-        <view class="music-desc">已为您播放了歌曲</view>
+        <view class="music-desc">已为您播放歌曲（右上角按钮停止播放）</view>
     </view>
     <view class="music-right">
         <image class="music-status" src="https://h5cdn.hunbei.com/editorCustomPic/2022-5-25-dcdPDnJmTyZs5FbjdeWdXShEEYRkN6A4.gif?imageMogr2/auto-orient/thumbnail/48x34>" mode="aspectFit" />
@@ -52,8 +52,8 @@
     <view class="husband-desc">
         <view>/</view>
         <view>我是小李</view>
-        <view>111</view>
-        <view>111</view>
+        <view>恭候各位大驾光临</view>
+        <view>大家吃好喝好</view>
     </view>
 </view>
 
@@ -273,8 +273,10 @@
     </view>
 </view>
 
-<!-- 公告栏入口 -->
-<view wx:if="{{ isManager }}" class="manager">
-    <image bindtap="goInfo" src="../../images/icon/manager.png" mode="widthFix"/>
-    <text class="manager-text">婚礼相关安排</text>
-</view>
+<button
+  wx:if="{{ isManager }}"
+  class="left-bar auto"
+  bindtap="goInfo"
+>
+  婚礼相关安排
+</button>

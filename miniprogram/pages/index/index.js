@@ -71,9 +71,9 @@ Page({
 
             // 轮播图1
             swiper1: [
-                'https://res.wx.qq.com/t/fed_upload/849dfcf2-049a-42ba-9f6c-ddd6f30b8487/swiper1-1.jpg',
-                'https://res.wx.qq.com/t/fed_upload/849dfcf2-049a-42ba-9f6c-ddd6f30b8487/swiper1-2.jpg',
-                'https://res.wx.qq.com/t/fed_upload/849dfcf2-049a-42ba-9f6c-ddd6f30b8487/swiper1-3.jpg'
+                'https://pic.imgdd.cc/item/6982157c19dc2be4ad70cfb5.jpg',
+                'https://pic.imgdd.cc/item/6982157c19dc2be4ad70cfb6.jpg',
+                'https://pic.imgdd.cc/item/6982157d19dc2be4ad70cfb7.jpg'
             ],
 
             // 连续图

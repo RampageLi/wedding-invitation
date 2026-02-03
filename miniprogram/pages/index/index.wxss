@@ -568,29 +568,44 @@
     width: 40rpx;
 }
 
-.manager {
+.left-bar {
     position: fixed;
     top: 50%;
-    left: 20rpx;
-    padding: 0;
+    left: -280rpx;                 /* 🔥 吃进屏幕，消掉空隙 */
     transform: translateY(-50%);
     z-index: 99999999;
-    display: flex;
-    flex-direction: column;  /* 垂直排列：上图下字 */
-    align-items: center;  
+
+    /* 关键：左右 padding 不对称 */
+    padding: 18rpx 12rpx 18rpx 6rpx;  /* 上 右 下 左 */
+
+    background-color: #E6C27A;
+    color: #5A3E1B;
+
+    border-radius: 0 20rpx 20rpx 0;
+    border: none;
+    box-shadow: 4rpx 6rpx 16rpx rgba(0, 0, 0, 0.15);
+
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+    font-size: 32rpx;
+    letter-spacing: 2rpx;
+    min-width: 44rpx;
 }
 
-.manager image {
-    width: 120rpx;
-    height: 120rpx;
+.left-bar::after {
+    border: none;
 }
 
-.manager-text {
-  margin-left: 8rpx;
-  padding: 4rpx 10rpx;
-  background-color: #FF8C00;   /* 灰底 */
-  color: #FFFFFF;                /* 深灰字 */
-  font-size: 30rpx;
-  border-radius: 12rpx;       /* 圆角 */
-  line-height: 1;
+.cover-text-gold {
+    margin-top: 24rpx;
+
+    font-size: 40rpx;        /* 放大文字 */
+    font-weight: 600;
+    letter-spacing: 4rpx;
+
+    text-align: center;
+
+    /* 金色 */
+    color: #3BCAD7;          /* 经典香槟金 */
 }

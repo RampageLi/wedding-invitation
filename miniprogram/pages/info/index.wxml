@@ -1,6 +1,32 @@
 <view class="desc">{{ desc }}</view>
 
 <view class="part">
+    <view class="part-title">日程安排</view>
+
+    <view class="part-main">
+        <view
+            class="day-block"
+            wx:for="{{ info }}"
+            wx:key="date"
+        >
+            <!-- 日期标题 -->
+            <view class="day-title">
+                {{ item.title }}
+            </view>
+
+            <!-- 当天安排 -->
+            <view
+                class="info-list"
+                wx:for="{{ item.list }}"
+                wx:key="*this"
+            >
+                {{ item }}
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="part">
     <view class="part-title">联系方式</view>
     <view class="part-main">
         <view class="couple">
@@ -45,12 +71,5 @@
             <text>{{ item.name }}</text>
             <image src="../../images/icon/pdf.png" mode="aspectFit" />
         </view>
-    </view>
-</view>
-
-<view class="part">
-    <view class="part-title">其它事项</view>
-    <view class="part-main">
-        <view class="info-list" wx:for="{{ info }}" wx:key="*this">{{ index + 1 }}. {{ item }}</view>
     </view>
 </view>
