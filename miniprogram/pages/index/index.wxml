@@ -9,12 +9,12 @@
 </view>
 
 <view class="cover-wrap">
-    <image class="img-cover-word" src="https://pic1.imgdb.cn/item/6981e0ea4f83a817d7f83010.png>" mode="aspectFit" />
+    <image class="img-cover-word" src="https://pic1.imgdb.cn/item/6983358fb38a7ceb9305bc03.png>" mode="aspectFit" />
     <view class="cover">
-        <image class="img-invitation" src="https://h5cdn.hunbei.com/editorCustomPic/2022-11-4-N87SPKmaSQW7kZ3i7ZH4QHeMXpYhZzDs.png?imageMogr2/auto-orient/crop/!1455x384a457a363/quality/90|imageMogr2/thumbnail/659x174>" mode="aspectFit" />
+        <image class="img-invitation" src="https://pic1.imgdb.cn/item/69832d32b38a7ceb9305ba59.png" mode="aspectFit" />
         <image class="img-cover" src="{{ imgs.cover }}" mode="aspectFit" />
     </view>
-    <view class="cover-text-gold">佳偶自天成，良缘由夙缔</view>
+    <!-- <view class="cover-text-gold">佳偶自天成，良缘由夙缔</view> -->
 </view>
 
 <view class="music">
@@ -34,7 +34,7 @@
 <view class="tc lh21 mb58">
     <view>Hey!</view>
     <view>当收到这封请柬的时候</view>
-    <view class="mb58">小李和小陈的海岛婚礼已经倒计时啦</view>
+    <view class="mb58">小陈和小李的海岛婚礼已经倒计时啦</view>
     <view>没有什么规模宏大的盛宴</view>
     <view>就是想请您吃吃饭、吹吹海风</view>
     <view>这是一场为数不多的相聚</view>
@@ -169,15 +169,29 @@
 </view>
 
 <view class="location mb100">
-    <view>
-        <view>{{ location.name }}</view>
-        <view>{{ location.address }}</view>
-    </view>
-    <map longitude="{{ location.longitude }}" latitude="{{ location.latitude }}" enable-zoom="{{ false }}" enable-scroll="{{ false }}" markers="{{ location.markers }}" />
-    <view class="location-mask" bindtap="openLocation"></view>
+    <!-- 图片 + 文字 横向布局 -->
+    <view class="location-row">
+        <!-- 左侧图片 -->
+        <image
+            class="location-image"
+            src="https://pic1.imgdb.cn/item/69831484b38a7ceb9305af2e.png"
+        />
 
-    <!-- 仅用于获取定位信息，获取后会打印到控制台并写入到粘贴板，正式发布时记得注释起来 -->
-    <button type="primary" size="mini" bindtap="chooseLocation">选择位置并获取定位信息</button>
+        <!-- 右侧文字 -->
+        <view class="location-text">
+            <view class="location-name">{{ location.name }}</view>
+            <view class="location-address">{{ location.address }}</view>
+        </view>
+    </view>
+
+    <map
+        longitude="{{ location.longitude }}"
+        latitude="{{ location.latitude }}"
+        enable-zoom="{{ false }}"
+        enable-scroll="{{ false }}"
+        markers="{{ location.markers }}"
+    />
+    <view class="location-mask" bindtap="openLocation"></view>
 </view>
 
 <view class="phone mb100">

@@ -102,28 +102,30 @@
     margin-bottom: 0;
 }
 
+/* 标题整体：横向 + 竖直居中 */
 .map-title {
-    padding: 10rpx;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12rpx; /* 和地图的间距，可调 */
 }
 
-.map-wrap {
-    position: relative;
-    margin-top: 10rpx;
+.map-icon {
+    width: 171rpx;
+    height: 62rpx;
+    flex-shrink: 0;
 }
 
-map {
-    width: 100%;
-    height: 270rpx;
-    border-radius: 10rpx;
-    overflow: hidden;
+.map-text {
+    margin-left: 16rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.map-mask {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.map-name,
+.map-address {
+    line-height: 1.5;
+    text-align: left;
 }
 
 .file {
@@ -174,3 +176,4 @@ map {
     line-height: 1.8;
     margin-bottom: 6rpx;
 }
+

@@ -27,13 +27,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-bottom: 0;
 }
 
 .img-cover-word {
     position: absolute;
-    left: 20rpx;
+    left: -20rpx;
     bottom: 0;
-    width: 498rpx;
+    width: 693rpx;
     height: 462rpx;
 }
 
@@ -57,7 +58,7 @@
 .music {
     display: flex;
     align-items: center;
-    margin: 60rpx 40rpx 88rpx;
+    margin: 0rpx 40rpx 88rpx;
     padding: 20rpx;
     box-shadow: rgb(194, 194, 194) 0 0 10rpx;
     border-radius: 10rpx;
@@ -571,18 +572,16 @@
 .left-bar {
     position: fixed;
     top: 50%;
-    left: -280rpx;                 /* 🔥 吃进屏幕，消掉空隙 */
+    left: -280rpx;
     transform: translateY(-50%);
     z-index: 99999999;
 
-    /* 关键：左右 padding 不对称 */
-    padding: 18rpx 12rpx 18rpx 6rpx;  /* 上 右 下 左 */
+    padding: 18rpx 15rpx 18rpx 6rpx;
 
-    background-color: #E6C27A;
-    color: #5A3E1B;
+    background-color: transparent;
+    color: #A61D24;
 
     border-radius: 0 20rpx 20rpx 0;
-    border: none;
     box-shadow: 4rpx 6rpx 16rpx rgba(0, 0, 0, 0.15);
 
     writing-mode: vertical-rl;
@@ -591,6 +590,16 @@
     font-size: 32rpx;
     letter-spacing: 2rpx;
     min-width: 44rpx;
+}
+
+.left-bar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(201, 160, 99, 0.55);
+    backdrop-filter: blur(6rpx);
+    border-radius: 0 20rpx 20rpx 0;
+    z-index: -1;
 }
 
 .left-bar::after {
@@ -608,4 +617,34 @@
 
     /* 金色 */
     color: #3BCAD7;          /* 经典香槟金 */
+}
+
+/* 横向布局，竖直居中 */
+.location-row {
+    display: flex;
+    align-items: center;   /* 文字整体相对图片竖直居中 */
+}
+
+/* 左侧图片 */
+.location-image {
+    width: 171rpx;
+    height: 62rpx;
+    flex-shrink: 0;
+}
+
+/* 右侧文字整体 */
+.location-text {
+    margin-left: 16rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 文字块内部居中 */
+}
+
+/* 两行文字：尽可能紧凑 */
+.location-name,
+.location-address {
+    line-height: 1.5;     /* 行距尽量小但不挤 */
+    margin: 0;            /* 防止默认外边距影响 */
+    padding: 0;
+    text-align: left;
 }

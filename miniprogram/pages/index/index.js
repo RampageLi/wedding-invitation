@@ -49,16 +49,16 @@ Page({
 
         // 酒店信息（通过页面上的「选择位置并获取定位信息」按钮可以获取定位信息，发布前记得把按钮注释起来）
         location: genLocation([{
-            name: '婚宴酒店名XXXXXXXX',
-            address: '详细地址XXXXXXXXXXXXXXX',
-            latitude: 23.03387641906739,
-            longitude: 113.7241439819336
+            name: '蓝湾绿城威斯汀度假酒店',
+            address: '海南陵水县清水湾旅游度假区C区',
+            latitude: 18.414602279663086,
+            longitude: 109.953857421875
         }])[0],
 
         // 图片信息（其实就是婚纱照了）
         imgs: {
             // 封面图
-            cover: 'https://pic1.imgdb.cn/item/6981d89d4f83a817d7f82dc3.jpg',
+            cover: 'https://pic1.imgdb.cn/item/698332f0b38a7ceb9305bb70.jpg',
 
             // 音乐封面
             poster: 'https://pic1.imgdb.cn/item/6981e5514f83a817d7f83299.jpg',
