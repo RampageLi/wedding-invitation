@@ -31,25 +31,65 @@
     </view>
 </view>
 
-<view class="tc lh21 mb58">
-    <view>Hey!</view>
-    <view>当收到这封请柬的时候</view>
-    <view class="mb58">小陈和小李的海岛婚礼已经倒计时啦</view>
-    <view>没有什么规模宏大的盛宴</view>
-    <view>就是想请您吃吃饭、吹吹海风</view>
-    <view>这是一场为数不多的相聚</view>
-    <view>是千里迢迢的奔赴</view>
-    <view>好久不见，海边见</view>
-    <view>❤</view>
+<view class="tc lh21 mb100">
+    <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
+    <image class="img-calendar-title mb100" src="https://pic1.imgdb.cn/item/6984194b013471eb7b51ba85.png" mode="aspectFit" />
+    <view class="tc lh21 mb58">
+        <view>Hey!</view>
+        <view>当你看到这封请柬的时候</view>
+        <view class="mb58">小陈和小李的海岛婚礼，正在倒计时</view>
+        <view>不办盛大的排场</view>
+        <view>只想请你吃几顿饭，吹吹海风</view>
+        <view>这是一次难得的相聚</view>
+        <view>也是一场跨越千里的奔赴</view>
+        <view>好久不见，海边见</view>
+        <view>❤</view>
+    </view>
 </view>
 
-<view class="tc lh21 mb100">
-    <image class="img-introduce" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-WNhBXi3ty4fw7dwFBxSZneDKYtz754ya.png?imageMogr2/auto-orient/thumbnail/542.00x58.84>" mode="aspectFit" />
+<view class="block mb40">
+    <calendar id="calendar" date="{{ weddingTime }}"></calendar>
 </view>
+
+<view class="block mb80 tc">
+    <view>{{ weddingTimeStr[2] }}</view>
+    <view>{{ weddingTimeStr[3] }}</view>
+</view>
+
+<view class="block mb100 location">
+    <!-- 图片 + 文字 横向布局 -->
+    <view class="location-row">
+        <!-- 左侧图片 -->
+        <image
+            class="location-image"
+            src="https://pic1.imgdb.cn/item/69831484b38a7ceb9305af2e.png"
+        />
+
+        <!-- 右侧文字 -->
+        <view class="location-text">
+            <view class="location-name">{{ location.name }}</view>
+            <view class="location-address">{{ location.address }}</view>
+        </view>
+    </view>
+
+    <map
+        longitude="{{ location.longitude }}"
+        latitude="{{ location.latitude }}"
+        enable-zoom="{{ false }}"
+        enable-scroll="{{ false }}"
+        markers="{{ location.markers }}"
+    />
+    <view class="location-mask" bindtap="openLocation"></view>
+</view>
+
+
+<!-- <view class="tc lh21 mb100">
+    <image class="img-introduce" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-WNhBXi3ty4fw7dwFBxSZneDKYtz754ya.png?imageMogr2/auto-orient/thumbnail/542.00x58.84>" mode="aspectFit" />
+</view> -->
 
 <view class="husband lh21 mb100">
     <image class="img-husband" src="{{ imgs.husband }}" mode="aspectFit" />
-    <view class="husband-desc">
+    <view class="husband-desc ming-text">
         <view>/</view>
         <view>我是小李</view>
         <view>恭候各位大驾光临</view>
@@ -58,35 +98,32 @@
 </view>
 
 <view class="wife lh21 mb100">
-    <view class="wife-desc">
+    <view class="wife-desc ming-text">
         <view>/</view>
         <view>我是小陈</view>
-        <view>111</view>
-        <view>111</view>
+        <view>欢迎您盛装出席</view>
+        <view>玩得开心</view>
     </view>
     <image class="img-wife" src="{{ imgs.wife }}" mode="aspectFit" />
 </view>
 
 <view class="tc lh21 mb100">
     <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
-    <image class="img-wedding mb58" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-HsinmKrKbjrjeSYWDBi7JYMjxrNeeXtj.png?imageMogr2/auto-orient/thumbnail/507x99>/format/webp" mode="aspectFit" />
+    <image class="img-wedding mb58" src="https://pic1.imgdb.cn/item/69842eb1013471eb7b51e80c.png" mode="aspectFit" />
     <swiper class="swiper-western mb58" autoplay circular interval="2500" easing-function="linear" indicator-dots>
         <swiper-item wx:for="{{ imgs.swiper1 }}" wx:key="*this">
             <image class="img-full-width" src="{{ item }}" mode="widthFix" />
         </swiper-item>
     </swiper>
-    <view>人们从诗人的字句里，</view>
-    <view>选取自己心爱的意义。</view>
-    <view>但诗句的最终意义是指向你。</view>
-    <view>                                  ——泰戈尔《吉檀迦利》</view>
+    <view>Love can fight everything.</view>
 </view>
 
 <view class="tc lh21 mb152">
     <view class="img-list mb58">
         <image wx:for="{{ imgs.series }}" wx:key="*this" class="img-full-width" src="{{ item }}" mode="widthFix" />
     </view>
-    <view>人生其实只要两次幸运就好</view>
-    <view>一次遇见你，一次是走到底</view>
+    <view>对于我们而言最幸运的两件事</view>
+    <view>一件是遇见你，一件是携手走向世界尽头</view>
     <view>如今，我们决定开启人生新的篇章</view>
     <view>让爱以夫妻之名延续</view>
 </view>
@@ -139,62 +176,27 @@
 
 <view class="tc lh21 mb100">
     <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
-    <image class="img-you mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-PZQCrTaWTKSdJKe2Gd5FzatfyQWzZyjA.png?imageMogr2/auto-orient/thumbnail/603x118>/format/webp" mode="aspectFit" />
-    <view>人的一生有三万多天</view>
-    <view>很开心这一天</view>
+    <image class="img-you mb100" src="https://pic1.imgdb.cn/item/69846cdb013471eb7b528a45.png" mode="aspectFit" />
+    <view>很荣幸这一天</view>
     <view>你专为我们而来</view>
     <view>请准备好你的好心情和好胃口</view>
-    <view>来奔赴这场{{ weddingTimeStr[1] }}日的聚会叭~</view>
+    <view>共同奔赴这场{{ weddingTimeStr[1] }}日的聚会吧</view>
 </view>
 
 <view class="tc lh21 mb100">
     <view class="love mb100">囍</view>
-    <swiper class="swiper-chinese mb100" autoplay circular interval="2500" easing-function="linear" indicator-dots>
+    <!-- <swiper class="swiper-chinese mb100" autoplay circular interval="2500" easing-function="linear" indicator-dots>
         <swiper-item wx:for="{{ imgs.swiper3 }}" wx:key="*this">
             <image class="img-full-width" src="{{ item }}" mode="widthFix" />
         </swiper-item>
-    </swiper>
+    </swiper> -->
     <view class="mb58">{{ couple[0].name }} & {{ couple[1].name }}</view>
     <view>携同我们的父母</view>
-    <view>邀请您出席我们的婚礼仪式</view>
+    <view>邀请您出席我们的草坪婚礼仪式</view>
     <view>见证和分享我们的幸福时刻</view>
 </view>
 
-<view class="tc lh21 mb100">
-    <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
-    <image class="img-calendar-title mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-22-wybCS45p5fFnRhTpQB5x48WhY4bjEDj8.png?imageMogr2/auto-orient/thumbnail/511x117>/format/webp" mode="aspectFit" />
-    <calendar id="calendar" date="{{ weddingTime }}"></calendar>
-    <view>{{ weddingTimeStr[2] }}</view>
-    <view>{{ weddingTimeStr[3] }}</view>
-</view>
-
-<view class="location mb100">
-    <!-- 图片 + 文字 横向布局 -->
-    <view class="location-row">
-        <!-- 左侧图片 -->
-        <image
-            class="location-image"
-            src="https://pic1.imgdb.cn/item/69831484b38a7ceb9305af2e.png"
-        />
-
-        <!-- 右侧文字 -->
-        <view class="location-text">
-            <view class="location-name">{{ location.name }}</view>
-            <view class="location-address">{{ location.address }}</view>
-        </view>
-    </view>
-
-    <map
-        longitude="{{ location.longitude }}"
-        latitude="{{ location.latitude }}"
-        enable-zoom="{{ false }}"
-        enable-scroll="{{ false }}"
-        markers="{{ location.markers }}"
-    />
-    <view class="location-mask" bindtap="openLocation"></view>
-</view>
-
-<view class="phone mb100">
+<!-- <view class="phone mb100">
     <view class="phone-item" wx:for="{{ couple }}" wx:key="name">
         <image class="couple-cover" src="{{ item.image }}" mode="aspectFit" />
         <button bindtap="call" data-phone="{{ item.number }}"><image src="../../images/icon/phone.png" mode="aspectFit" />联系{{ item.alias }}</button>
@@ -216,24 +218,28 @@
         </view>
         <button form-type="submit" open-type="getUserInfo">{{ name ? '更新' : '提交' }}</button>
     </view>
-</form>
+</form> -->
 
 <view class="tc lh21 mb100">
     <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
     <image class="img-full-width mb100" src="{{ imgs.end1 }}" mode="widthFix" />
     <view class="tl">
-        <view class="tips">温馨tips：</view>
-        <view>请预留好{{ weddingTimeStr[4] }}这一天的行程</view>
+        <view class="tips">温馨提示</view>
+        <view>
+            请您预留好
+            <text class="highlight">{{ weddingTimeStr[4] }}</text>
+            的行程
+        </view>
         <view>如果被事务牵绊或临时有变化</view>
-        <view class="mb58">请提前告知新郎/新娘</view>
+        <view class="mb58">请提前告知小陈/小李</view>
         <view>许久未见 ，甚是想念</view>
-        <view>我们，婚礼见</view>
+        <view>我们，海边见</view>
     </view>
 </view>
 
 <view class="tc lh21 mb152">
-    <image class="img-full-width mb100" src="{{ imgs.end2 }}" mode="widthFix" />
-    <view class="tr mb100">
+    <!-- <image class="img-full-width mb100" src="{{ imgs.end2 }}" mode="widthFix" /> -->
+    <!-- <view class="tr mb100">
         <view>我把我的整个灵魂都给你</view>
         <view>连同它的怪癖</view>
         <view>耍小脾气，忽明忽暗</view>
@@ -242,8 +248,8 @@
         <view class="mb58">只有一点好，爱你</view>
         <view>/ 爱你就像爱生命 /</view>
         <view>/ 王小波 /</view>
-    </view>
-    <image class="img-end" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-19-niYXMwfBrA5bCeRQSFnXRRKRmcSnmfEC.png?imageMogr2/auto-orient/thumbnail/519x264>/format/webp" mode="aspectFit" />
+    </view> -->
+    <image class="img-end" src="https://pic1.imgdb.cn/item/6984590f013471eb7b52662b.png" mode="aspectFit" />
 </view>
 
 <!-- 彩蛋板块视乎个人情况决定要不要 -->

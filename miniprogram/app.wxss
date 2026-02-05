@@ -16,3 +16,10 @@ page > view {
     width: 268rpx;
     height: 426rpx;
 }
+
+@font-face {
+  font-family: 'IMing';
+  src: url('/fonts/IMing-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

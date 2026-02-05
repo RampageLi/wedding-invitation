@@ -142,7 +142,7 @@ Page({
     onShareAppMessage() {
         return {
             title: 'C&L 婚礼公告',
-            imageUrl: '../../images/infoPoster.jpg'
+            imageUrl: '../../images/infoPoster.png'
         }
     }
 })

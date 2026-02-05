@@ -6,6 +6,7 @@
     margin-bottom: 28rpx;
     letter-spacing: 4rpx;
     line-height: 1.5;
+    font-family: 'IMing', serif;
 }
 
 .desc {
@@ -197,8 +198,8 @@
 }
 
 .img-wedding {
-    width: 338rpx;
-    height: 66rpx;
+    width: 316rpx;
+    height: 100rpx;
 }
 
 .swiper-western {
@@ -302,7 +303,7 @@
     line-height: 1;
     font-weight: bold;
     writing-mode: lr-tb;
-    color: rgb(133, 22, 14);
+    color: #A61D24;
 }
 
 .swiper-chinese {
@@ -452,14 +453,15 @@
     font-size: 32rpx;
     line-height: 1;
     padding: 10rpx;
-    background-color: #999999;
+    background-color: rgba(201, 160, 99, 0.55);
+    color: #A61D24;
     display: inline-block;
     margin-bottom: 40rpx;
 }
 
 .img-end {
-    width: 346rpx;
-    height: 176rpx;
+    width: 260rpx;
+    height: 260rpx;
 }
 
 .egg {
@@ -647,4 +649,30 @@
     margin: 0;            /* 防止默认外边距影响 */
     padding: 0;
     text-align: left;
+}
+
+.mb40 { 
+    margin-bottom: 0rpx; 
+}
+
+.mb80  { 
+    margin-bottom: 50rpx; 
+}
+
+.mb100 { 
+    margin-bottom: 50rpx; 
+}
+
+.tc {
+    text-align: center;
+    font-family: 'IMing', serif;
+}
+
+.highlight {
+    font-weight: 600;      /* 加粗（比 bold 更高级） */
+    color: #A61D24;        /* 你页面的主红 */
+}
+
+.ming-text {
+    font-family: 'IMing', serif;
 }

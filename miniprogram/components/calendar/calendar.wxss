@@ -1,9 +1,9 @@
 .calendar {
     width: 576rpx;
     border: 20rpx solid rgb(133, 22, 14);
-    margin: 0 auto 152rpx;
+    margin: 0 auto 50rpx;
     padding: 72rpx;
-    color: rgb(133, 22, 14);
+    color: #A61D24;
     line-height: 1;
     box-sizing: border-box;
     position: relative;
@@ -66,7 +66,7 @@
     display: block;
     width: 56rpx;
     height: 56rpx;
-    background-color: rgb(133, 22, 14);
+    background-color: #A61D24;
     top: -6rpx;
     border-radius: 50%;
     z-index: 11;

@@ -78,9 +78,9 @@ Page({
 
             // 连续图
             series: [
-                'https://res.wx.qq.com/t/fed_upload/c707cb28-126b-4a5d-89f6-688551456d15/series1.jpg',
-                'https://res.wx.qq.com/t/fed_upload/c707cb28-126b-4a5d-89f6-688551456d15/series2.jpg',
-                'https://res.wx.qq.com/t/fed_upload/c707cb28-126b-4a5d-89f6-688551456d15/series3.jpg'
+                'https://pic1.imgdb.cn/item/6984342f013471eb7b51ee59.jpg',
+                'https://pic1.imgdb.cn/item/69843437013471eb7b51ee5d.jpg',
+                'https://pic1.imgdb.cn/item/69843437013471eb7b51ee5e.jpg'
             ],
 
             // 左上图
@@ -115,7 +115,7 @@ Page({
             ],
 
             // 结尾图1
-            end1: 'https://res.wx.qq.com/t/fed_upload/9b5bad9c-216b-4fd5-a3da-01bdb3a5e832/end1.jpg',
+            end1: 'https://pic1.imgdb.cn/item/69846aef013471eb7b527636.jpg',
 
             // 结尾图2
             end2: 'https://res.wx.qq.com/t/fed_upload/9b5bad9c-216b-4fd5-a3da-01bdb3a5e832/end2.jpg'
@@ -153,11 +153,11 @@ Page({
         this.lunisolarDate = this.selectComponent('#calendar').lunisolarDate
         this.setData({
             weddingTimeStr: [
-                this.lunisolarDate.format('YYYY-MM-DD HH:mm'),
+                this.lunisolarDate.format('YYYY-M-DD HH:mm'),
                 this.lunisolarDate.getSeason(),
-                this.lunisolarDate.format('YYYY年MM月DD号  HH:mm'),
+                this.lunisolarDate.format('YYYY年M月DD号  HH:mm'),
                 this.lunisolarDate.format('农历lMlD  dddd'),
-                this.lunisolarDate.format('YYYY年MM月DD号')
+                this.lunisolarDate.format('YYYY年M月DD号')
             ]
         })
     },
@@ -207,16 +207,16 @@ Page({
     // 分享到会话
     onShareAppMessage() {
         return {
-            title: '好久不见，婚礼见٩(๑^o^๑)۶',
-            imageUrl: '../../images/shareAppMsg.jpg'
+            title: '来自海岛的婚礼请柬 From C&L',
+            imageUrl: '../../images/shareAppMsg.png'
         }
     },
 
     // 分享到朋友圈
     onShareTimeline() {
         return {
-            title: '好久不见，婚礼见٩(๑^o^๑)۶',
-            imageUrl: '../../images/shareTimeline.jpg'
+            title: '来自海岛的婚礼请柬 From C&L',
+            imageUrl: '../../images/shareTimeline.png'
         }
     },
 

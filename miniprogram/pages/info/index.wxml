@@ -67,6 +67,25 @@
 </view>
 
 <view class="part">
+    <view class="part-title">交通导航</view>
+    <view class="part-main">
+        <view class="nav-label">到达机场</view>
+        <view class="nav-text">1. 三亚凤凰国际机场（推荐）</view>
+        <view class="nav-text nav-gap">2. 海口美兰国际机场</view>
+        <view class="nav-label">机场 → 酒店</view>
+        <view class="nav-text">1. 三亚凤凰国际机场 → 酒店接机/自行打车（车程约1小时）</view>
+        <view class="nav-text">2. 海口美兰国际机场 → 美兰高铁站 → 陵水高铁站 → 酒店接机/自行打车</view>
+        <view class="nav-text nav-gap">3. 海口美兰国际机场 → 自驾前往（不推荐，路上没有太多风景）</view>
+        <view class="nav-label nav-tip">酒店接机服务</view>
+        <view class="nav-text">
+            酒店提供
+            <text class="nav-bold">三亚国际机场/陵水站</text>
+            的接机服务，麻烦您提前将航班/高铁号次发给小陈or小李，我们将为您安排考斯特商务车接机
+        </view>
+    </view>
+</view>
+
+<view class="part">
     <view class="part-title">联系方式</view>
     <view class="part-main">
         <view class="couple">
