@@ -115,7 +115,7 @@ Page({
             ],
 
             // 结尾图1
-            end1: 'https://pic1.imgdb.cn/item/69846aef013471eb7b527636.jpg',
+            end1: 'https://pic1.imgdb.cn/item/69856ad5f8ef6591278be0cb.jpg',
 
             // 结尾图2
             end2: 'https://res.wx.qq.com/t/fed_upload/9b5bad9c-216b-4fd5-a3da-01bdb3a5e832/end2.jpg'

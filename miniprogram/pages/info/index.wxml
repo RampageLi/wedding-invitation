@@ -4,6 +4,9 @@
     <view class="part-title">日程安排</view>
 
     <view class="part-main">
+        <view class="tip-title">温馨提示</view>
+        <view class="tip-text">1. 具体日程安排可能会发生变化，若有调整会在这里实时更新，麻烦您多关注</view>
+        <view class="tip-text tip-gap">2. 婚礼全流程都欢迎和期望您的共同参与，不过宾客可根据自身情况进行时间安排，开心和舒适最为重要</view>
         <view
             class="day-block"
             wx:for="{{ info }}"
@@ -104,7 +107,7 @@
     </view>
 </view>
 
-<view class="part">
+<!-- <view class="part">
     <view class="part-title">PDF资料</view>
     <view class="part-main">
         <view class="file" wx:for="{{ files }}" wx:key="fileId" bindtap="openFile" data-index="{{ index }}">
@@ -112,4 +115,4 @@
             <image src="../../images/icon/pdf.png" mode="aspectFit" />
         </view>
     </view>
-</view>
+</view> -->

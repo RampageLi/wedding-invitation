@@ -6,7 +6,6 @@
     margin-bottom: 28rpx;
     letter-spacing: 4rpx;
     line-height: 1.5;
-    font-family: 'IMing', serif;
 }
 
 .desc {
@@ -665,7 +664,6 @@
 
 .tc {
     text-align: center;
-    font-family: 'IMing', serif;
 }
 
 .highlight {
@@ -673,6 +671,14 @@
     color: #A61D24;        /* 你页面的主红 */
 }
 
-.ming-text {
-    font-family: 'IMing', serif;
+.divider {
+  line-height: 0;      /* 🔴 关键，干掉基线空隙 */
+  margin: 0;
+  padding: 0;
+}
+
+.divider-img {
+  width: 100%;
+  height: auto;
+  display: block;     /* 🔴 关键，去掉 inline 空白 */
 }

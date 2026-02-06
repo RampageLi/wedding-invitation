@@ -204,3 +204,20 @@
 .nav-bold {
     font-weight: 600;
 }
+
+.tip-title {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #A61D24;
+    margin-bottom: 12rpx;
+}
+
+.tip-text {
+    font-size: 26rpx;
+    color: #A61D24;
+    line-height: 1.8;
+}
+
+.tip-gap {
+    margin-bottom: 24rpx;
+}

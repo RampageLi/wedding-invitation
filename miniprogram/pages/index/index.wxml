@@ -1,4 +1,4 @@
-<view class="title">
+<!-- <view class="title">
     <view>来自海岛的婚礼请柬</view>
     <view>欢迎参加{{ couple[0].name }}&{{ couple[1].name }}的草坪婚礼</view>
 </view>
@@ -6,7 +6,7 @@
 <view class="desc">
     <text class="author">{{ publisher }}</text>
     <text class="date">{{ weddingTimeStr[0] }}</text>
-</view>
+</view> -->
 
 <view class="cover-wrap">
     <image class="img-cover-word" src="https://pic1.imgdb.cn/item/6983358fb38a7ceb9305bc03.png>" mode="aspectFit" />
@@ -89,7 +89,7 @@
 
 <view class="husband lh21 mb100">
     <image class="img-husband" src="{{ imgs.husband }}" mode="aspectFit" />
-    <view class="husband-desc ming-text">
+    <view class="husband-desc">
         <view>/</view>
         <view>我是小李</view>
         <view>恭候各位大驾光临</view>
@@ -98,7 +98,7 @@
 </view>
 
 <view class="wife lh21 mb100">
-    <view class="wife-desc ming-text">
+    <view class="wife-desc">
         <view>/</view>
         <view>我是小陈</view>
         <view>欢迎您盛装出席</view>
@@ -118,7 +118,7 @@
     <view>Love can fight everything.</view>
 </view>
 
-<view class="tc lh21 mb152">
+<view class="tc lh21 mb100">
     <view class="img-list mb58">
         <image wx:for="{{ imgs.series }}" wx:key="*this" class="img-full-width" src="{{ item }}" mode="widthFix" />
     </view>
@@ -128,7 +128,7 @@
     <view>让爱以夫妻之名延续</view>
 </view>
 
-<view class="leaf lh21 mb152">
+<!-- <view class="leaf lh21 mb152">
     <view class="img-row mb28">
         <image class="img-leaf-left" src="{{ imgs.leftUp }}" mode="aspectFit" />
         <image class="img-leaf" src="https://h5cdn.hunbei.com/editorCustomPic/2022-8-2-k8yzidKa4XYnCZdMDQWfGmaxzXreeAeP.png?imageMogr2/auto-orient/thumbnail/624x493>/format/webp" mode="aspectFit" />
@@ -159,9 +159,9 @@
     <view>家人闲坐，灯火可亲</view>
     <view>世上最有趣的事</view>
     <view>就是和最爱的人一起虚度光阴</view>
-</view>
+</view> -->
 
-<view class="tc lh21 mb100">
+<!-- <view class="tc lh21 mb100">
     <swiper class="swiper-outdoor" autoplay circular interval="2500" easing-function="linear" indicator-dots>
         <swiper-item wx:for="{{ imgs.swiper2 }}" wx:key="*this">
             <image class="img-full-width" src="{{ item }}" mode="widthFix" />
@@ -172,7 +172,7 @@
     <view>我们将成为彼此紧紧依靠的家人</view>
     <view>银河系浪漫的搭车客</view>
     <view>共同去探索广阔遥远的世界</view>
-</view>
+</view> -->
 
 <view class="tc lh21 mb100">
     <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
@@ -237,7 +237,9 @@
     </view>
 </view>
 
-<view class="tc lh21 mb152">
+
+
+<view class="tc lh21">
     <!-- <image class="img-full-width mb100" src="{{ imgs.end2 }}" mode="widthFix" /> -->
     <!-- <view class="tr mb100">
         <view>我把我的整个灵魂都给你</view>
@@ -251,6 +253,15 @@
     </view> -->
     <image class="img-end" src="https://pic1.imgdb.cn/item/6984590f013471eb7b52662b.png" mode="aspectFit" />
 </view>
+
+<view class="divider">
+    <image
+        class="divider-img"
+        src="https://pic1.imgdb.cn/item/6985962ef8ef6591278ce9e5.png>"
+        mode="widthFix" 
+    />
+</view>
+
 
 <!-- 彩蛋板块视乎个人情况决定要不要 -->
 <view wx:if="{{ showEggs }}" class="egg tc">
