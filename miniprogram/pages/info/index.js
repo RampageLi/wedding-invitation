@@ -144,7 +144,7 @@ Page({
     onShareAppMessage() {
         return {
             title: 'C&L 婚礼公告',
-            imageUrl: '../../images/infoPoster.png'
+            imageUrl: 'https://pic1.imgdb.cn/item/6985b071f8ef6591278d4c0c.png'
         }
     }
 })
