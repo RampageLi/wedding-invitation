@@ -102,7 +102,7 @@
         <view>/</view>
         <view>我是小陈</view>
         <view>欢迎您盛装出席</view>
-        <view>玩得开心</view>
+        <view>玩得开心噢</view>
     </view>
     <image class="img-wife" src="{{ imgs.wife }}" mode="aspectFit" />
 </view>

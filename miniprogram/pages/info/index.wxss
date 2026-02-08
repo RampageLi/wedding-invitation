@@ -1,6 +1,8 @@
 .desc {
     word-wrap: break-word;
     word-break: break-all;
+    font-size: 26rpx;
+    line-height: 1.8;
 }
 
 .part {
