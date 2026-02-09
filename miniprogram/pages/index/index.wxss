@@ -32,10 +32,10 @@
 
 .img-cover-word {
     position: absolute;
-    left: -20rpx;
-    bottom: 0;
-    width: 693rpx;
-    height: 462rpx;
+    left: 110rpx;
+    bottom: 100rpx;
+    width: 400rpx;
+    height: auto;          /* 关键 */
 }
 
 .cover {
@@ -45,9 +45,10 @@
 }
 
 .img-invitation {
-    width: 436rpx;
-    height: 116rpx;
-    margin-bottom: 16rpx;
+    display: block;
+    width: auto;
+    height: 85rpx;
+    margin: 0 auto 16rpx;
 }
 
 .img-cover {
@@ -58,7 +59,7 @@
 .music {
     display: flex;
     align-items: center;
-    margin: 0rpx 40rpx 88rpx;
+    margin: -40rpx 40rpx 88rpx;
     padding: 20rpx;
     box-shadow: rgb(194, 194, 194) 0 0 10rpx;
     border-radius: 10rpx;

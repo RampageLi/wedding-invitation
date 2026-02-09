@@ -71,9 +71,15 @@ Page({
 
             // 轮播图1
             swiper1: [
-                'https://pic.imgdd.cc/item/6982157c19dc2be4ad70cfb5.jpg',
-                'https://pic.imgdd.cc/item/6982157c19dc2be4ad70cfb6.jpg',
-                'https://pic.imgdd.cc/item/6982157d19dc2be4ad70cfb7.jpg'
+                'https://pic1.imgdb.cn/item/6989979f01b1be04704efea7.jpg',
+                'https://pic1.imgdb.cn/item/6989979f01b1be04704efea6.jpg',
+                'https://pic1.imgdb.cn/item/698997c101b1be04704efeb6.jpg',
+                'https://pic1.imgdb.cn/item/698997c101b1be04704efeb7.jpg',
+                'https://pic1.imgdb.cn/item/698997c101b1be04704efeb5.jpg',
+                'https://pic1.imgdb.cn/item/698997a001b1be04704efeab.jpg',
+                'https://pic1.imgdb.cn/item/698997a001b1be04704efeaa.jpg',
+                'https://pic1.imgdb.cn/item/698997a001b1be04704efea9.jpg',
+                'https://pic1.imgdb.cn/item/698997a001b1be04704efea8.jpg',
             ],
 
             // 连续图
