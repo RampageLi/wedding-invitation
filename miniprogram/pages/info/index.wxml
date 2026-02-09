@@ -89,6 +89,17 @@
 </view>
 
 <view class="part">
+    <view class="part-title">酒店平面图</view>
+    <view class="part-main">
+        <image class="hotel" src="https://pic1.imgdb.cn/item/6989bbcc01b1be04704f077f.jpg" mode="widthFix" />
+        <view class="nav-text">
+            请注意，婚礼仪式将在
+            <text class="nav-bold">冲浪池草坪</text>
+            举行，不要走错了哦。</view>
+    </view>
+</view>
+
+<view class="part">
     <view class="part-title">温馨提示</view>
     <view class="part-main">
         <view class="nav-text">
