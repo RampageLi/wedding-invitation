@@ -47,7 +47,7 @@
         <view>这是一次难得的相聚</view>
         <view>也是一场跨越千里的奔赴</view>
         <view>好久不见，海边见</view>
-        <view>❤</view>
+        <view class="heart"></view>
     </view>
 </view>
 
@@ -227,7 +227,7 @@
 <view class="tc lh21 mb100">
     <image class="img-separate mb100" src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-26-rx4ZZi3KdMErdNk4E2X3EHh3EiB3bPdY.gif?imageMogr2/auto-orient/thumbnail/864x27>" mode="aspectFit" />
     <image class="img-full-width mb100" src="{{ imgs.end1 }}" mode="widthFix" />
-    <view class="tl">
+    <view class="tc">
         <view class="tips">温馨提示</view>
         <view>
             请您预留好
@@ -237,7 +237,10 @@
         <view>如果被事务牵绊或临时有变化</view>
         <view class="mb58">请提前告知小陈/小李</view>
         <view>许久未见 ，甚是想念</view>
-        <view>我们，海边见</view>
+        <view class="last-line">
+            <text>我们，海边见</text>
+            <view class="heart heart-ml"></view>
+        </view>
     </view>
 </view>
 

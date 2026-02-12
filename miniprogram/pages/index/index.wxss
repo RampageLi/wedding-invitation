@@ -683,3 +683,43 @@
   height: auto;
   display: block;     /* 🔴 关键，去掉 inline 空白 */
 }
+
+.heart{
+  width: 10px;          /* 爱心大小（可调） */
+  height: 10px;
+  background: #A61D24;  /* 你的颜色 */
+  transform: rotate(-45deg);
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;   /* 可选：让棱角更柔和 */
+}
+
+.heart::before,
+.heart::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #A61D24;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.heart::before{
+  top: -5px;
+  left: 0;
+}
+
+.heart::after{
+  left: 5px;
+  top: 0;
+}
+
+.heart-ml{
+    margin-left: 12rpx;
+}
+
+.last-line{
+  display: flex;
+  align-items: center;  /* 垂直居中 */
+  justify-content: center; /* 如果你想整体居中 */
+}

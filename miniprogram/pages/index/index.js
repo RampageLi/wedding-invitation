@@ -214,7 +214,7 @@ Page({
     onShareAppMessage() {
         return {
             title: '来自海岛的婚礼请柬 From C&L',
-            imageUrl: 'https://pic1.imgdb.cn/item/6985b071f8ef6591278d4c0c.png'
+            imageUrl: 'https://pic1.imgdb.cn/item/698d43a27469864549dd8801.jpg'
         }
     },
 
@@ -222,7 +222,7 @@ Page({
     onShareTimeline() {
         return {
             title: '来自海岛的婚礼请柬 From C&L',
-            imageUrl: 'https://pic1.imgdb.cn/item/6985b078f8ef6591278d4c15.png'
+            imageUrl: 'https://pic1.imgdb.cn/item/698d43a37469864549dd8802.jpg'
         }
     },
 
