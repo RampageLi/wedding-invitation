@@ -70,6 +70,34 @@
 </view>
 
 <view class="part">
+    <view class="part-title">欢迎宴（3.27晚）餐厅位置</view>
+    <view class="part-main">
+        <view class="nav-text">绿苑中餐厅（距离酒店1.4公里，步行可达）</view>
+        <view class="map" wx:for="{{ restaurant_location }}" wx:key="name">
+            <view class="map-wrap">
+                <map
+                    longitude="{{ item.longitude }}"
+                    latitude="{{ item.latitude }}"
+                    enable-zoom="{{ false }}"
+                    enable-scroll="{{ false }}"
+                    markers="{{ item.markers }}"
+                />
+                <view
+                    class="map-mask"
+                    bindtap="openLocation"
+                    data-index="{{ index }}"
+                ></view>
+            </view>
+        </view>
+
+        <!-- 仅用于获取定位信息，获取后会打印到控制台并写入到粘贴板，正式发布时记得注释起来 -->
+        <!-- <button type="primary" size="mini" bindtap="chooseLocation">
+            选择位置并获取定位信息
+        </button> -->
+    </view>
+</view>
+
+<view class="part">
     <view class="part-title">交通导航</view>
     <view class="part-main">
         <view class="nav-label">到达机场</view>
