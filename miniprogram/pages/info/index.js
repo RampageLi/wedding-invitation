@@ -102,6 +102,16 @@ Page({
         })
     },
 
+    openRestLocation(e) {
+        const location = this.data.restaurant_location[e.target.dataset.index]
+        wx.openLocation({
+            latitude: location.latitude,
+            longitude: location.longitude,
+            name: location.name,
+            address: location.address
+        })
+    },
+
     // 仅用于获取定位信息，获取后会打印到控制台并写入到粘贴板，正式发布时记得注释起来
     chooseLocation() {
         wx.chooseLocation({

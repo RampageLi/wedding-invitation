@@ -84,7 +84,7 @@
                 />
                 <view
                     class="map-mask"
-                    bindtap="openLocation"
+                    bindtap="openRestLocation"
                     data-index="{{ index }}"
                 ></view>
             </view>
